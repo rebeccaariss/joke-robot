@@ -28,9 +28,12 @@ async function getJokes() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
+    // If the return data includes a setup, this means we're getting a two-part
+    // joke. We are separating the setup and punchline with ellipses here:
     if (data.setup) {
       joke = `${data.setup} ... ${data.delivery}`;
     } else {
+    // Single jokes (no setup) do not require formatting and can be directly assigned:
       joke = data.joke;
     }
     console.log(joke);
