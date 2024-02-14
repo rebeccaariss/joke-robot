@@ -15,7 +15,6 @@ function toggleButton() {
 
 // Pass the joke to VoiceRSS API:
 function tellMe(joke) {
-  console.log('tell me:', joke);
   VoiceRSS.speech({
     key: `${config.ttsApiKey}`,
     src: joke,
