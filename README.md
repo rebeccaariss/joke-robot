@@ -4,7 +4,7 @@ Joke Robot makes use of a couple of APIs: [JokeAPI](https://sv443.net/jokeapi/v2
 (Because "How do you find Will Smith in the snow? You look for the *Fresh Prints*!" just sounds better out loud than it looks in written text!)
 
 ## Demo
-![Demo](docs/demo.gif)
+![Demo](./docs/demo.gif)
 
 ## Sample
 Here's my favourite programming joke from the JokeAPI:
